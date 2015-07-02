@@ -88,4 +88,24 @@ public class prime {
 
         return pn;
     }
+
+    /**
+     * 
+     * @param s
+     * @param e
+     * @return 
+     */
+    public static int primeCount(int s, int e) {
+        int count = 0;
+        
+        for(int i=s;i<=e;i++)
+        {
+            if(isPrime(i))
+            {
+                count++;
+            }
+        }
+
+        return count;
+    }
 }
