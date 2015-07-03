@@ -20,7 +20,7 @@ public class sequence {
 
         int n = a[0];
         int index = 0;
-        while (n > 1) {
+        while (n !=1) {
             index++;
             if(n%2==0)
             {
@@ -29,6 +29,12 @@ public class sequence {
             else
             {
                 n=n*3+1;
+            }
+            
+            if(index>=a.length)
+            {
+               isGS=false;
+               break;
             }
             
             if(n!=a[index])
@@ -40,5 +46,32 @@ public class sequence {
 
         return isGS;
 
+    }
+    
+    
+    
+    public static int guithireIndex(int n)
+    {
+        int index=0;
+        
+        
+        
+        while(n!=1)
+        {
+            index++;
+           if(n%2==0)
+           {
+               n/=2;
+           }
+           else
+           {
+               n=n*3+1;
+           }
+           
+        }
+        
+        
+        
+        return index;
     }
 }

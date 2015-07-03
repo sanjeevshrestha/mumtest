@@ -56,11 +56,18 @@ public class MumTest {
 //        System.out.println(special.stantonMeasure(new int[]{3,1,1,4}));
 //        System.out.println(special.stantonMeasure(new int[]{1, 3, 1, 1, 3, 3, 2, 3, 3, 3, 4}));
 //        System.out.println(special.stantonMeasure(new int[]{}));
-        System.out.println(special.sumFactor(new int[]{3, 0, 2, -5, 0}));
-        System.out.println(special.sumFactor(new int[]{9, -3, -3, -1, -1}));
-        System.out.println(special.sumFactor(new int[]{1}));
-        System.out.println(special.sumFactor(new int[]{0, 0, 0}));
-        System.out.println(special.sumFactor(new int[]{}));
+//        System.out.println(special.sumFactor(new int[]{3, 0, 2, -5, 0}));
+//        System.out.println(special.sumFactor(new int[]{9, -3, -3, -1, -1}));
+//        System.out.println(special.sumFactor(new int[]{1}));
+//        System.out.println(special.sumFactor(new int[]{0, 0, 0}));
+//        System.out.println(special.sumFactor(new int[]{}));
+
+        System.out.println(sequence.guithireIndex(1));
+        System.out.println(sequence.guithireIndex(2));
+        System.out.println(sequence.guithireIndex(3));
+        System.out.println(sequence.guithireIndex(4));
+        System.out.println(sequence.guithireIndex(42));
+
 
     }
 }
