@@ -1,9 +1,5 @@
 package mumtest;
 
-import mumtest.prime;
-import mumtest.sqrt;
-import mumtest.sequence;
-
 /**
  *
  * @author sanjeev
@@ -29,7 +25,6 @@ public class MumTest {
 //        System.out.println(sqrt.nextPerfectSquare(109));
 //        System.out.println(sqrt.nextPerfectSquare(9786));
 //        System.out.println(sqrt.nextPerfectSquare(-24));
-
         System.out.println(prime.primeCount(10, 300000));
 
         System.out.println(sequence.isGuithireSequence(new int[]{8, 4, 2, 1}));
@@ -37,11 +32,13 @@ public class MumTest {
         System.out.println(sequence.isGuithireSequence(new int[]{8, 4, 1}));
         System.out.println(sequence.isGuithireSequence(new int[]{8, 17, 2}));
 
-
-
-
-
-
+        System.out.println(special.isMadhavArray(new int[]{2, 1, 1}));
+        System.out.println(special.isMadhavArray(new int[]{2, 1, 1, 4, -1, -1}));
+        System.out.println(special.isMadhavArray(new int[]{6, 2, 4, 2, 2, 2, 1, 5, 0, 0}));
+        System.out.println(special.isMadhavArray(new int[]{18, 9, 10, 6, 6, 6}));
+        System.out.println(special.isMadhavArray(new int[]{-6, -3, -3, 8, -5, -4}));
+        System.out.println(special.isMadhavArray(new int[]{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, -2, -1}));
+        System.out.println(special.isMadhavArray(new int[]{3, 1, 2, 3, 0}));
 
     }
 }
