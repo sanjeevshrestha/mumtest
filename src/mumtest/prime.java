@@ -11,12 +11,12 @@ package mumtest;
 public class prime {
 
     /**
-     * 
+     *
      * @param n
-     * @return 
+     * @return
      */
     public static boolean isPrime(int n) {
-        if (n <= 0) {
+        if (n <= 1) {
             return false;
         }
 
@@ -29,13 +29,11 @@ public class prime {
                 limit = (x + (n / x)) / 2;
             } while ((x - limit) != 0);
 
-
-
             if (n % 2 == 0) {
                 return false;
             }
 
-            for (int i = 3; i < limit; i += 2) {
+            for (int i = 3; i <=limit; i += 2) {
                 if (n % i == 0) {
                     flag = true;
                     break;
@@ -48,9 +46,9 @@ public class prime {
     }
 
     /**
-     * 
+     *
      * @param n
-     * @return 
+     * @return
      */
     public static int nextPrime(int n) {
         n++;
@@ -63,9 +61,9 @@ public class prime {
     }
 
     /**
-     * 
+     *
      * @param n
-     * @return 
+     * @return
      */
     public static int findPorcupineNumber(int n) {
         n++;
@@ -83,21 +81,20 @@ public class prime {
 
             }
 
-
         }
 
         return pn;
     }
 
     /**
-     * 
+     *
      * @param s
      * @param e
-     * @return 
+     * @return
      */
     public static int primeCount(int s, int e) {
         int count = 0;
-        
+
         for(int i=s;i<=e;i++)
         {
             if(isPrime(i))

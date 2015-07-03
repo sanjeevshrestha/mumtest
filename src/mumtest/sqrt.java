@@ -11,9 +11,9 @@ package mumtest;
 public class sqrt {
 
     /**
-     * 
+     *
      * @param n
-     * @return 
+     * @return
      */
     public static double sqrt(int n) {
         if (n <= 0) {
@@ -30,9 +30,9 @@ public class sqrt {
     }
 
     /**
-     * 
+     *
      * @param n
-     * @return 
+     * @return
      */
     public static boolean isPerfectSquare(int n) {
         boolean perfect = false;
