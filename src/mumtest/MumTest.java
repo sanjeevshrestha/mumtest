@@ -43,19 +43,24 @@ public class MumTest {
 //        System.out.println(counter.nUpCount(new int[]{6, 3, 1}, 5));
 //        System.out.println(counter.nUpCount(new int[]{1, 2, -1, 5, 3, 2, -3}, 20));
 //        
-        //System.out.println(prime.isPrime(25));
-//         System.out.println(prime.primeCount(10, 30));
+//        System.out.println(prime.isPrime(25));
+//        System.out.println(prime.primeCount(10, 30));
 //        System.out.println(prime.primeCount(11, 29));
 //        System.out.println(prime.primeCount(20, 22));
 //        System.out.println(prime.primeCount(1, 1));
 //        System.out.println(prime.primeCount(5, 5));
 //        System.out.println(prime.primeCount(6, 2));
 //        System.out.println(prime.primeCount(-10, 6));
-        System.out.println(special.stantonMeasure(new int[]{1}));
-        System.out.println(special.stantonMeasure(new int[]{0}));
-        System.out.println(special.stantonMeasure(new int[]{3,1,1,4}));
-        System.out.println(special.stantonMeasure(new int[]{1, 3, 1, 1, 3, 3, 2, 3, 3, 3, 4}));
-        System.out.println(special.stantonMeasure(new int[]{}));
+//        System.out.println(special.stantonMeasure(new int[]{1}));
+//        System.out.println(special.stantonMeasure(new int[]{0}));
+//        System.out.println(special.stantonMeasure(new int[]{3,1,1,4}));
+//        System.out.println(special.stantonMeasure(new int[]{1, 3, 1, 1, 3, 3, 2, 3, 3, 3, 4}));
+//        System.out.println(special.stantonMeasure(new int[]{}));
+        System.out.println(special.sumFactor(new int[]{3, 0, 2, -5, 0}));
+        System.out.println(special.sumFactor(new int[]{9, -3, -3, -1, -1}));
+        System.out.println(special.sumFactor(new int[]{1}));
+        System.out.println(special.sumFactor(new int[]{0, 0, 0}));
+        System.out.println(special.sumFactor(new int[]{}));
 
     }
 }

@@ -102,9 +102,9 @@ public class special {
     }
 
     /**
-     * 
+     *
      * @param a
-     * @return 
+     * @return
      */
     public static int stantonMeasure(int[] a) {
         int count = 0;
@@ -126,6 +126,28 @@ public class special {
 
         return count;
 
+    }
+
+    /**
+     * 
+     * @param a
+     * @return 
+     */
+    public static int sumFactor(int[] a) {
+        int sumFactor = 0;
+
+        int sum = 0;
+        for (int val : a) {
+            sum += val;
+        }
+
+        for (int val : a) {
+            if (val == sum) {
+                sumFactor++;
+            }
+        }
+
+        return sumFactor;
     }
 
 }
