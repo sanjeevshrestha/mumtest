@@ -101,4 +101,31 @@ public class special {
         return inertial;
     }
 
+    /**
+     * 
+     * @param a
+     * @return 
+     */
+    public static int stantonMeasure(int[] a) {
+        int count = 0;
+
+        int count_1 = 0;
+
+        for (int val : a) {
+            if (val == 1) {
+                count_1++;
+            }
+        }
+
+        for (int val : a) {
+
+            if (val == count_1) {
+                count++;
+            }
+        }
+
+        return count;
+
+    }
+
 }
