@@ -62,11 +62,13 @@ public class MumTest {
 //        System.out.println(special.sumFactor(new int[]{0, 0, 0}));
 //        System.out.println(special.sumFactor(new int[]{}));
 
-        System.out.println(sequence.guithireIndex(1));
-        System.out.println(sequence.guithireIndex(2));
-        System.out.println(sequence.guithireIndex(3));
-        System.out.println(sequence.guithireIndex(4));
-        System.out.println(sequence.guithireIndex(42));
+//        System.out.println(sequence.guithireIndex(1));
+//        System.out.println(sequence.guithireIndex(2));
+//        System.out.println(sequence.guithireIndex(3));
+//        System.out.println(sequence.guithireIndex(4));
+//        System.out.println(sequence.guithireIndex(42));
+        
+        System.out.println(factorial.solve10());
 
 
     }
