@@ -4,8 +4,6 @@
  */
 package mumtest;
 
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  *
@@ -21,6 +19,10 @@ public class factorial {
 
     }
 
+    /**
+     * 
+     * @return 
+     */
     public static int[] solve10() {
         int x = factorial(10);
         int[] s = new int[]{};
@@ -46,4 +48,18 @@ public class factorial {
 
 
     }
+    
+    
+   public static int pow(int x,int y)
+   {
+       int pow=1;
+       
+       for(int i =0;i<y;i++)
+       {
+           pow*=x;
+       }
+       
+       return pow;
+       
+   }
 }

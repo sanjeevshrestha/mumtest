@@ -5,6 +5,8 @@
  */
 package mumtest;
 
+import java.util.Arrays;
+
 /**
  *
  * @author sanjeev
@@ -129,9 +131,9 @@ public class special {
     }
 
     /**
-     * 
+     *
      * @param a
-     * @return 
+     * @return
      */
     public static int sumFactor(int[] a) {
         int sumFactor = 0;
@@ -148,6 +150,64 @@ public class special {
         }
 
         return sumFactor;
+    }
+
+    /**
+     *
+     * @param a
+     * @param n
+     * @return
+     */
+    public static int repsEqual(int[] a, int n) {
+        int x = 1;
+
+        int l = a.length;
+
+        int val;
+        int tpow = 0;
+
+        for (int i = 0; i < l; i++) {
+            tpow = (int) factorial.pow(10, (l - i - 1));
+            val = n / tpow;
+            n = n % tpow;
+
+            if (val != a[i]) {
+                x = 0;
+                break;
+            }
+
+        }
+
+        return x;
+    }
+
+  
+    public static int isCentered15(int[] a) {
+        int x = 0;
+        int sum = 0;
+        int l = a.length;
+
+        int si = 0, ei = 0;
+
+        for (int i = 0; i < l; i++) {
+            ei = i;
+            sum += a[i];
+            if (sum > 15) {
+                while (sum > 15) {
+                    sum -= a[si];
+                    si++;
+                }
+            }
+            if (sum == 15) {
+                if (si == l - ei - 1) {
+                    x = 1;
+                    break;
+                } else {
+                    x = 0;
+                }
+            }
+        }
+        return x;
     }
 
 }
