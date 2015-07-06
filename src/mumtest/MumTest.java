@@ -88,11 +88,17 @@ public class MumTest {
 //        System.out.println(special.isCentered15(new int[]{2,3,4,5,6,7,8}));
         // System.out.println(special.perfectNumber(3));
         //    System.out.println(special.henry(1,3));
-        System.out.println(special.isDivisible(new int[]{3, 3, 6, 36}, 3));
-        System.out.println(special.isDivisible(new int[]{4}, 2));
-        System.out.println(special.isDivisible(new int[]{3, 4, 3, 6, 36}, 4));
-        System.out.println(special.isDivisible(new int[]{6, 12, 24, 36}, 12));
-        System.out.println(special.isDivisible(new int[]{}, 3));
+//        System.out.println(special.isDivisible(new int[]{3, 3, 6, 36}, 3));
+//        System.out.println(special.isDivisible(new int[]{4}, 2));
+//        System.out.println(special.isDivisible(new int[]{3, 4, 3, 6, 36}, 4));
+//        System.out.println(special.isDivisible(new int[]{6, 12, 24, 36}, 12));
+//        System.out.println(special.isDivisible(new int[]{}, 3));
+        System.out.println(special.isNUnique(new int[]{7, 3, 3, 2, 4}, 6));
+        System.out.println(special.isNUnique(new int[]{7, 3, 3, 2, 4}, 10));
+        System.out.println(special.isNUnique(new int[]{7, 3, 3, 2, 4}, 11));
+        System.out.println(special.isNUnique(new int[]{7, 3, 3, 2, 4}, 8));
+        System.out.println(special.isNUnique(new int[]{7, 3, 3, 2, 4}, 4));
+        System.out.println(special.isNUnique(new int[]{1}, 6));
 
     }
 }
