@@ -181,7 +181,6 @@ public class special {
         return x;
     }
 
-  
     public static int isCentered15(int[] a) {
         int x = 0;
         int sum = 0;
@@ -208,6 +207,77 @@ public class special {
             }
         }
         return x;
+    }
+
+    /**
+     * 
+     * @param i
+     * @param j
+     * @return 
+     */
+    public static int henry(int i, int j) {
+
+        int iPNumber = 0, jPNumber = 0;
+        int pNumber = 0;
+        int x = 0;
+        int limit = i > j ? i : j;
+        while (x < limit) {
+            pNumber++;
+            int factor = 1;
+            int pNumberSum = 0;
+            while (pNumber > factor) {
+                if (pNumber % factor == 0) {
+                    pNumberSum += factor;
+                }
+                factor++;
+            }
+
+            if (pNumber == pNumberSum) {
+                x++;
+            }
+
+            if (x == i) {
+                iPNumber = pNumber;
+            }
+
+            if (x == j) {
+                jPNumber = pNumber;
+            }
+
+        }
+        return iPNumber + jPNumber;
+    }
+
+    /**
+     * 
+     * @param n
+     * @return 
+     */
+    public static int perfectNumber(int n) {
+        int pNumber = 0;
+
+        int x = 0;
+        while (x < n) {
+            pNumber++;
+            int factor = 1;
+            int pNumberSum = 0;
+            while (pNumber > factor) {
+                if (pNumber % factor == 0) {
+                    pNumberSum += factor;
+                }
+                factor++;
+            }
+            if (pNumber == pNumberSum) {
+                x++;
+
+            }
+            if (x == n) {
+                break;
+            }
+        }
+
+        return pNumber;
+
     }
 
 }

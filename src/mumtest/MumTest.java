@@ -77,15 +77,19 @@ public class MumTest {
 //        System.out.println(special.repsEqual(new int[]{9, 3, 1, 1, 2}, 32053));
 //        System.out.println(special.repsEqual(new int[]{0, 3, 2, 0, 5, 3}, 32053));
 //        System.out.println(special.repsEqual(new int[]{3, 2, 0, 5, 3}, 3205));
-        System.out.println(special.isCentered15(new int[]{3, 2, 10, 4, 1, 6, 9}));
-        System.out.println(special.isCentered15(new int[]{2, 10, 4, 1, 6, 9}));
-        System.out.println(special.isCentered15(new int[]{3, 2, 10, 4, 1, 6}));
-        System.out.println(special.isCentered15(new int[]{9, 15, 6}));
-        System.out.println(special.isCentered15(new int[]{15}));
-        System.out.println(special.isCentered15(new int[]{15, 2}));
-        System.out.println(special.isCentered15(new int[]{15,1,4,10,1,4,1}));
-        System.out.println(special.isCentered15(new int[]{15}));
-        System.out.println(special.isCentered15(new int[]{2,3,4,5,6,7,8}));
+//        System.out.println(special.isCentered15(new int[]{3, 2, 10, 4, 1, 6, 9}));
+//        System.out.println(special.isCentered15(new int[]{2, 10, 4, 1, 6, 9}));
+//        System.out.println(special.isCentered15(new int[]{3, 2, 10, 4, 1, 6}));
+//        System.out.println(special.isCentered15(new int[]{9, 15, 6}));
+//        System.out.println(special.isCentered15(new int[]{15}));
+//        System.out.println(special.isCentered15(new int[]{15, 2}));
+//        System.out.println(special.isCentered15(new int[]{15,1,4,10,1,4,1}));
+//        System.out.println(special.isCentered15(new int[]{15}));
+//        System.out.println(special.isCentered15(new int[]{2,3,4,5,6,7,8}));
+        
+       // System.out.println(special.perfectNumber(3));
+     
+         System.out.println(special.henry(1,3));
 
     }
 }
