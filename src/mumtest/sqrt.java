@@ -51,4 +51,30 @@ public class sqrt {
         number++;
         return number * number;
     }
+    
+    /**
+     * 
+     * @param n
+     * @return 
+     */
+    public static int isSquare(int n)
+    {
+        
+        double tmp,sq=n/2;
+    
+        do
+        {
+            tmp=sq;
+            sq=(tmp+(n/tmp))/2;
+        }
+        while((tmp-sq)!=0);
+        
+        int xSq=(int)sq;
+        if(xSq==sq)
+        {
+            return 1;
+        }
+        return 0;
+        
+    }
 }

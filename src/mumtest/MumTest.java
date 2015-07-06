@@ -93,12 +93,16 @@ public class MumTest {
 //        System.out.println(special.isDivisible(new int[]{3, 4, 3, 6, 36}, 4));
 //        System.out.println(special.isDivisible(new int[]{6, 12, 24, 36}, 12));
 //        System.out.println(special.isDivisible(new int[]{}, 3));
-        System.out.println(special.isNUnique(new int[]{7, 3, 3, 2, 4}, 6));
-        System.out.println(special.isNUnique(new int[]{7, 3, 3, 2, 4}, 10));
-        System.out.println(special.isNUnique(new int[]{7, 3, 3, 2, 4}, 11));
-        System.out.println(special.isNUnique(new int[]{7, 3, 3, 2, 4}, 8));
-        System.out.println(special.isNUnique(new int[]{7, 3, 3, 2, 4}, 4));
-        System.out.println(special.isNUnique(new int[]{1}, 6));
+//        System.out.println(special.isNUnique(new int[]{7, 3, 3, 2, 4}, 6));
+//        System.out.println(special.isNUnique(new int[]{7, 3, 3, 2, 4}, 10));
+//        System.out.println(special.isNUnique(new int[]{7, 3, 3, 2, 4}, 11));
+//        System.out.println(special.isNUnique(new int[]{7, 3, 3, 2, 4}, 8));
+//        System.out.println(special.isNUnique(new int[]{7, 3, 3, 2, 4}, 4));
+//        System.out.println(special.isNUnique(new int[]{1}, 6));
+        System.out.println(sqrt.isSquare(16));
+        System.out.println(sqrt.isSquare(144));
+        System.out.println(sqrt.isSquare(3089));
+        System.out.println(sqrt.isSquare(255));
 
     }
 }
