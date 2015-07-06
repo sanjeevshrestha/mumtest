@@ -4,9 +4,6 @@
  * and open the template in the editor.
  */
 package mumtest;
-
-import java.util.Arrays;
-
 /**
  *
  * @author sanjeev
@@ -278,6 +275,30 @@ public class special {
 
         return pNumber;
 
+    }
+    
+    /**
+     * 
+     * @param a
+     * @param divisor
+     * @return 
+     */
+    public static int isDivisible(int [] a, int divisor)
+    {
+        int divisible=1;
+        for(int val:a)
+        {
+            if(val%divisor==0)
+            {
+                divisible=divisible*1;
+            }
+            else
+            {
+                divisible=0;
+            }
+        }
+        
+        return divisible;
     }
 
 }
