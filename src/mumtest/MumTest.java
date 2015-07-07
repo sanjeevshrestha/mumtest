@@ -42,7 +42,7 @@ public class MumTest {
 //        System.out.println(counter.nUpCount(new int[]{2, 3, 1, -6, 8, -3, -1, 2}, 5));
 //        System.out.println(counter.nUpCount(new int[]{6, 3, 1}, 5));
 //        System.out.println(counter.nUpCount(new int[]{1, 2, -1, 5, 3, 2, -3}, 20));
-//        
+//
 //        System.out.println(prime.isPrime(25));
 //        System.out.println(prime.primeCount(10, 30));
 //        System.out.println(prime.primeCount(11, 29));
@@ -69,7 +69,7 @@ public class MumTest {
 //       int [] x=factorial.solve10();
 //       System.out.println(x[0]);
 //       System.out.println(x[1]);
-//       
+//
 //        System.out.println(special.repsEqual(new int[]{3, 2, 0, 5, 3}, 32053));
 //        System.out.println(special.repsEqual(new int[]{3, 2, 0, 5}, 32053));
 //        System.out.println(special.repsEqual(new int[]{3, 2, 0, 5, 3, 4}, 32053));
@@ -99,10 +99,16 @@ public class MumTest {
 //        System.out.println(special.isNUnique(new int[]{7, 3, 3, 2, 4}, 8));
 //        System.out.println(special.isNUnique(new int[]{7, 3, 3, 2, 4}, 4));
 //        System.out.println(special.isNUnique(new int[]{1}, 6));
-        System.out.println(sqrt.isSquare(16));
-        System.out.println(sqrt.isSquare(144));
-        System.out.println(sqrt.isSquare(3089));
-        System.out.println(sqrt.isSquare(255));
+//        System.out.println(sqrt.isSquare(16));
+//        System.out.println(sqrt.isSquare(144));
+//        System.out.println(sqrt.isSquare(3089));Ï
+//        System.out.println(sqrt.isSquare(255));
+//        System.out.println(base.isLegalNumber(new int[]{3, 2, 1}, 4));
+//        System.out.println(base.isLegalNumber(new int[]{3, 7, 1}, 6));
+        System.out.println(base.convertToBase10(new int[]{1, 0, 1, 1}, 2));
+        System.out.println(base.convertToBase10(new int[]{1, 1, 2}, 3));
+        System.out.println(base.convertToBase10(new int[]{3, 2, 5}, 8));
+        System.out.println(base.convertToBase10(new int[]{3, 7, 1}, 6));
 
     }
 }

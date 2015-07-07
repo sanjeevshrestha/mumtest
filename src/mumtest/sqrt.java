@@ -59,6 +59,11 @@ public class sqrt {
      */
     public static int isSquare(int n)
     {
+        if(n<0)
+        {
+            return 0;
+            
+        }
         
         double tmp,sq=n/2;
     
