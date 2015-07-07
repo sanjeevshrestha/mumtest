@@ -105,10 +105,19 @@ public class MumTest {
 //        System.out.println(sqrt.isSquare(255));
 //        System.out.println(base.isLegalNumber(new int[]{3, 2, 1}, 4));
 //        System.out.println(base.isLegalNumber(new int[]{3, 7, 1}, 6));
-        System.out.println(base.convertToBase10(new int[]{1, 0, 1, 1}, 2));
-        System.out.println(base.convertToBase10(new int[]{1, 1, 2}, 3));
-        System.out.println(base.convertToBase10(new int[]{3, 2, 5}, 8));
-        System.out.println(base.convertToBase10(new int[]{3, 7, 1}, 6));
-
+//        System.out.println(base.convertToBase10(new int[]{1, 0, 1, 1}, 2));
+//        System.out.println(base.convertToBase10(new int[]{1, 1, 2}, 3));
+//        System.out.println(base.convertToBase10(new int[]{3, 2, 5}, 8));
+//        System.out.println(base.convertToBase10(new int[]{3, 7, 1}, 6));
+//        System.out.println(MumArray.arrayHasNoZeroes(new int[]{1, 2, 3}));
+//        System.out.println(MumArray.arrayHasNoZeroes(new int[]{1, 0, 4, 0}));
+//        System.out.println(MumArray.arrayHasNoZeroes(new int[]{1, 2, 3, 0}));
+//        System.out.println(MumArray.arrayHasNoZeroes(new int[]{0, 0, 0, 0}));
+//        System.out.println(MumArray.arrayHasNoZeroes(new int[]{}));
+        
+        System.out.println(special.computeDepth(42));
+        System.out.println(special.computeDepth(7));
+        System.out.println(special.computeDepth(13));
+        System.out.println(special.computeDepth(25));
     }
 }

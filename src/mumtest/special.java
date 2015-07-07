@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package mumtest;
+
 /**
  *
  * @author sanjeev
@@ -207,10 +208,10 @@ public class special {
     }
 
     /**
-     * 
+     *
      * @param i
      * @param j
-     * @return 
+     * @return
      */
     public static int henry(int i, int j) {
 
@@ -246,9 +247,9 @@ public class special {
     }
 
     /**
-     * 
+     *
      * @param n
-     * @return 
+     * @return
      */
     public static int perfectNumber(int n) {
         int pNumber = 0;
@@ -276,55 +277,86 @@ public class special {
         return pNumber;
 
     }
-    
+
     /**
-     * 
+     *
      * @param a
      * @param divisor
-     * @return 
+     * @return
      */
-    public static int isDivisible(int [] a, int divisor)
-    {
-        int divisible=1;
-        for(int val:a)
-        {
-            if(val%divisor==0)
-            {
-                divisible=divisible*1;
-            }
-            else
-            {
-                divisible=0;
+    public static int isDivisible(int[] a, int divisor) {
+        int divisible = 1;
+        for (int val : a) {
+            if (val % divisor == 0) {
+                divisible = divisible * 1;
+            } else {
+                divisible = 0;
             }
         }
-        
+
         return divisible;
     }
-    
+
     /**
-     * 
+     *
      * @param a
      * @param n
-     * @return 
+     * @return
      */
-    public static int isNUnique(int[ ] a, int n)
-    {
-        int sums=0;
-        
-        for(int i=0;i<a.length;i++)
-        {
-            for(int j=i+1;j<a.length;j++)
-            {
-                if(a[i]+a[j]==n)
-                {
+    public static int isNUnique(int[] a, int n) {
+        int sums = 0;
+
+        for (int i = 0; i < a.length; i++) {
+            for (int j = i + 1; j < a.length; j++) {
+                if (a[i] + a[j] == n) {
                     sums++;
                 }
-                
+
             }
         }
-        
-        return sums==1?1:0;
-        
+
+        return sums == 1 ? 1 : 0;
+    }
+
+    /**
+     *
+     * @param n
+     * @return
+     */
+    public static int computeDepth(int n) {
+        int depth = 0;
+        int[] numlist = new int[]{};
+        boolean foundAll = false;
+        while (!foundAll) {
+            depth++;
+            int multiple = n * depth;
+            int newsize;
+            while (multiple > 0) {
+                int newnum = multiple % 10;
+                multiple = multiple / 10;
+                boolean duplicate = false;
+                for (int j : numlist) {
+                    if (j == newnum) {
+                        duplicate = true;
+                        break;
+                    }
+                }
+
+                if (!duplicate) {
+                    newsize = numlist.length + 1;
+                    int[] tmplist = new int[newsize];
+                    System.arraycopy(numlist, 0, tmplist, 0, numlist.length);
+                    tmplist[numlist.length] = newnum;
+                    numlist = tmplist;
+                }
+            }
+
+            if (numlist.length == 10) {
+                foundAll = true;
+            }
+        }
+
+        return depth;
     }
 
 }
