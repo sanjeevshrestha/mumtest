@@ -359,4 +359,27 @@ public class special {
         return depth;
     }
 
+    /**
+     * 
+     * @param n
+     * @return 
+     */
+    public static int isStacked(int n) {
+        int sum = 0;
+        int stacked = 0;
+        for (int i = 1; i <= n; i++) {
+            sum += i;
+            if (sum == n) {
+                stacked = 1;
+                break;
+            } else {
+                stacked = 0;
+            }
+
+        }
+
+        return stacked;
+
+    }
+
 }

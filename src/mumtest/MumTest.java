@@ -115,9 +115,12 @@ public class MumTest {
 //        System.out.println(MumArray.arrayHasNoZeroes(new int[]{0, 0, 0, 0}));
 //        System.out.println(MumArray.arrayHasNoZeroes(new int[]{}));
         
-        System.out.println(special.computeDepth(42));
-        System.out.println(special.computeDepth(7));
-        System.out.println(special.computeDepth(13));
-        System.out.println(special.computeDepth(25));
+//        System.out.println(special.computeDepth(42));
+//        System.out.println(special.computeDepth(7));
+//        System.out.println(special.computeDepth(13));
+//        System.out.println(special.computeDepth(25));
+//        
+        System.out.println(special.isStacked(10));
+        System.out.println(special.isStacked(7));
     }
 }
