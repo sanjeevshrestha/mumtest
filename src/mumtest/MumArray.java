@@ -23,4 +23,27 @@ public class MumArray {
         }
         return 1;
     }
+    
+    
+    public static int isSumSafe(int [] a)
+    {
+        int sum=0;
+        
+        for(int val:a)
+        {
+            sum+=val;
+        }
+        
+        for(int val:a)
+        {
+            if(val==sum)
+            {
+                return 0;
+            }
+        }
+        
+        return 1;
+    }
+    
+    
 }

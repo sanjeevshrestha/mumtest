@@ -360,9 +360,9 @@ public class special {
     }
 
     /**
-     * 
+     *
      * @param n
-     * @return 
+     * @return
      */
     public static int isStacked(int n) {
         int sum = 0;
@@ -379,6 +379,35 @@ public class special {
         }
 
         return stacked;
+
+    }
+
+    /**
+     *
+     * @param n
+     * @return
+     */
+    public static int isIsolated(long n) {
+        if (n > 2097151) {
+            return -1;
+        }
+
+        long sq = n * n;
+        long cube = n * n * n;
+
+        while (sq > 0) {
+            int sNumber = (int) (sq % 10);
+            sq = sq / 10;
+            while (cube > 0) {
+                int cNumber = (int) (cube % 10);
+                cube = cube / 10;
+                if (cNumber == sNumber) {
+                    return 0;
+                }
+            }
+
+        }
+        return 1;
 
     }
 
