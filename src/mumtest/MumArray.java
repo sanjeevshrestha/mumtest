@@ -68,9 +68,9 @@ public class MumArray {
     }
 
     /**
-     * 
+     *
      * @param a
-     * @return 
+     * @return
      */
     public static int isTrivalent(int[] a) {
         for (int i = 0; i < a.length; i++) {
@@ -97,5 +97,36 @@ public class MumArray {
         } else {
             return 0;
         }
+    }
+
+    public static int isSequentiallyBounded(int[] a) {
+        int isSqBounded = 0;
+        if (a.length > 0) {
+            int count = 1;
+            int prevNumber = a[0];
+            for (int i = 1; i < a.length; i++) {
+
+                if (prevNumber <= a[i]) {
+                    if (prevNumber == a[i]) {
+                        count++;
+                    } else {
+                        if (count < prevNumber) {
+                            prevNumber = a[i];
+                            count=1;
+                            
+                        } else {
+                            return 0;
+
+                        }
+                    }
+
+                } else {
+                    return  0;
+                }
+            }
+            return 1;
+        }
+        return 0;
+
     }
 }

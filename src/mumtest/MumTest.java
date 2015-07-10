@@ -130,16 +130,19 @@ public class MumTest {
 //        System.out.println(MumArray.isVanilla(new int[]{9, 999, 99999, 9999}));
 //        System.out.println(MumArray.isVanilla(new int[]{9, 999, 99999, -9899}));
 //        System.out.println(MumArray.isVanilla(new int[]{}));
-        
-        
 //        System.out.println(MumArray.isTrivalent(new int[]{ 0, 1, 4, 0, 0}));
 //        System.out.println(MumArray.isTrivalent(new int[]{-1, 0, 1, 0, 0, 0}));
 //        System.out.println(MumArray.isTrivalent(new int[]{}));
 //        System.out.println(MumArray.isTrivalent(new int[]{2147483647, -1, -1,-2147483648}));
-        
-        System.out.println(special.countRepresentations(12));
-        System.out.println(special.countRepresentations(5));
-        System.out.println(special.countRepresentations(14));
+//        System.out.println(special.countRepresentations(12));
+//        System.out.println(special.countRepresentations(5));
+//        System.out.println(special.countRepresentations(14));
+        System.out.println(MumArray.isSequentiallyBounded(new int[]{0, 1}));
+        System.out.println(MumArray.isSequentiallyBounded(new int[]{-1, 2}));
+        System.out.println(MumArray.isSequentiallyBounded(new int[]{}));
+        System.out.println(MumArray.isSequentiallyBounded(new int[]{5, 5, 5, 5}));
+        System.out.println(MumArray.isSequentiallyBounded(new int[]{5, 5, 5, 2, 5}));
+        System.out.println(MumArray.isSequentiallyBounded(new int[]{2, 3, 3, 99, 99, 99, 99, 99}));
 
     }
 }
