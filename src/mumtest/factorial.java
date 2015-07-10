@@ -31,6 +31,11 @@ public class factorial {
 
         while (!found) {
             i++;
+            if(i>9)
+            {
+                s = new int[]{0, 0}; 
+                break;
+            }
             for (int j = 1; j < i; j++) {
                 if (i != j) {
                     if (factorial(i) + factorial(j) == x) {

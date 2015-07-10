@@ -65,10 +65,11 @@ public class MumTest {
 //        System.out.println(sequence.guithireIndex(2));
 //        System.out.println(sequence.guithireIndex(3));
 //        System.out.println(sequence.guithireIndex(4));
-//        System.out.println(sequence.guithireIndex(42));
-//       int [] x=factorial.solve10();
-//       System.out.println(x[0]);
-//       System.out.println(x[1]);
+//        System.out.println(sequence.guithireIndex(42));       
+        
+        int [] x=factorial.solve10();
+      System.out.println(x[0]);
+       System.out.println(x[1]);
 //
 //        System.out.println(special.repsEqual(new int[]{3, 2, 0, 5, 3}, 32053));
 //        System.out.println(special.repsEqual(new int[]{3, 2, 0, 5}, 32053));
@@ -124,7 +125,7 @@ public class MumTest {
 //        System.out.println(MumArray.isSumSafe(new int[]{5, -5, 0}));
 //        System.out.println(MumArray.isSumSafe(new int[]{5, -2, 1}));
         
-        System.out.println(special.isIsolated(163));
+        //System.out.println(special.isIsolated(163));
 
     }
 }
