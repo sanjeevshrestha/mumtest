@@ -54,7 +54,12 @@ public class factorial {
 
     }
     
-    
+    /**
+     * 
+     * @param x
+     * @param y
+     * @return 
+     */
    public static int pow(int x,int y)
    {
        int pow=1;

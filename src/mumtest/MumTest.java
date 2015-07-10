@@ -66,10 +66,9 @@ public class MumTest {
 //        System.out.println(sequence.guithireIndex(3));
 //        System.out.println(sequence.guithireIndex(4));
 //        System.out.println(sequence.guithireIndex(42));       
-        
-        int [] x=factorial.solve10();
-      System.out.println(x[0]);
-       System.out.println(x[1]);
+        //   int[] x = factorial.solve10();
+        // System.out.println(x[0]);
+        // System.out.println(x[1]);
 //
 //        System.out.println(special.repsEqual(new int[]{3, 2, 0, 5, 3}, 32053));
 //        System.out.println(special.repsEqual(new int[]{3, 2, 0, 5}, 32053));
@@ -119,13 +118,28 @@ public class MumTest {
 //        System.out.println(special.computeDepth(7));
 //        System.out.println(special.computeDepth(13));
 //        System.out.println(special.computeDepth(25));
-//        
+//         
 //        System.out.println(special.isStacked(10));
 //        System.out.println(special.isStacked(7));
 //        System.out.println(MumArray.isSumSafe(new int[]{5, -5, 0}));
 //        System.out.println(MumArray.isSumSafe(new int[]{5, -2, 1}));
-        
         //System.out.println(special.isIsolated(163));
+//        System.out.println(MumArray.isVanilla(new int[]{1, 11, 111, 1111, 11111111}));
+//        System.out.println(MumArray.isVanilla(new int[]{11, 22, 13, 34, 125}));
+//        System.out.println(MumArray.isVanilla(new int[]{9, 999, 99999, -9999}));
+//        System.out.println(MumArray.isVanilla(new int[]{9, 999, 99999, 9999}));
+//        System.out.println(MumArray.isVanilla(new int[]{9, 999, 99999, -9899}));
+//        System.out.println(MumArray.isVanilla(new int[]{}));
+        
+        
+//        System.out.println(MumArray.isTrivalent(new int[]{ 0, 1, 4, 0, 0}));
+//        System.out.println(MumArray.isTrivalent(new int[]{-1, 0, 1, 0, 0, 0}));
+//        System.out.println(MumArray.isTrivalent(new int[]{}));
+//        System.out.println(MumArray.isTrivalent(new int[]{2147483647, -1, -1,-2147483648}));
+        
+        System.out.println(special.countRepresentations(12));
+        System.out.println(special.countRepresentations(5));
+        System.out.println(special.countRepresentations(14));
 
     }
 }
