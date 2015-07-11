@@ -137,12 +137,18 @@ public class MumTest {
 //        System.out.println(special.countRepresentations(12));
 //        System.out.println(special.countRepresentations(5));
 //        System.out.println(special.countRepresentations(14));
-        System.out.println(MumArray.isSequentiallyBounded(new int[]{0, 1}));
-        System.out.println(MumArray.isSequentiallyBounded(new int[]{-1, 2}));
-        System.out.println(MumArray.isSequentiallyBounded(new int[]{}));
-        System.out.println(MumArray.isSequentiallyBounded(new int[]{5, 5, 5, 5}));
-        System.out.println(MumArray.isSequentiallyBounded(new int[]{5, 5, 5, 2, 5}));
-        System.out.println(MumArray.isSequentiallyBounded(new int[]{2, 3, 3, 99, 99, 99, 99, 99}));
+//        System.out.println(MumArray.isSequentiallyBounded(new int[]{0, 1}));
+//        System.out.println(MumArray.isSequentiallyBounded(new int[]{-1, 2}));
+//        System.out.println(MumArray.isSequentiallyBounded(new int[]{}));
+//        System.out.println(MumArray.isSequentiallyBounded(new int[]{5, 5, 5, 5}));
+//        System.out.println(MumArray.isSequentiallyBounded(new int[]{5, 5, 5, 2, 5}));
+//        System.out.println(MumArray.isSequentiallyBounded(new int[]{2, 3, 3, 99, 99, 99, 99, 99}));
+        
+        int [] cComp=MumArray.clusterCompression(new int[]{8, 8, 6, 6, -2, -2, -2});
+        for(int val:cComp)
+        {
+            System.out.println(val);
+        }
 
     }
 }

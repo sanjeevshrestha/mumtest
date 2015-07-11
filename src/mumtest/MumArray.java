@@ -99,6 +99,11 @@ public class MumArray {
         }
     }
 
+    /**
+     * 
+     * @param a
+     * @return 
+     */
     public static int isSequentiallyBounded(int[] a) {
         int isSqBounded = 0;
         if (a.length > 0) {
@@ -128,5 +133,38 @@ public class MumArray {
         }
         return 0;
 
+    }
+    
+    /**
+     * 
+     * @param a
+     * @return 
+     */
+    public static int[] clusterCompression(int [] a)
+    {
+        
+        int [] cCluster=new int[]{};
+        
+        int count=0;
+        int prevNumber=0;
+        for(int val:a)
+        {
+            if(prevNumber!=val || count==0)
+            {
+                prevNumber=val;
+                count++;
+                int [] tmpAr=new int[count];
+                
+                System.arraycopy(cCluster, 0, tmpAr, 0, count-1);
+                tmpAr[count-1]=val;
+                cCluster=tmpAr;
+            }
+            
+        }
+        
+        
+        return cCluster;
+        
+        
     }
 }
