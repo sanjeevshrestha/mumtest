@@ -143,12 +143,26 @@ public class MumTest {
 //        System.out.println(MumArray.isSequentiallyBounded(new int[]{5, 5, 5, 5}));
 //        System.out.println(MumArray.isSequentiallyBounded(new int[]{5, 5, 5, 2, 5}));
 //        System.out.println(MumArray.isSequentiallyBounded(new int[]{2, 3, 3, 99, 99, 99, 99, 99}));
-        
-        int [] cComp=MumArray.clusterCompression(new int[]{8, 8, 6, 6, -2, -2, -2});
-        for(int val:cComp)
-        {
-            System.out.println(val);
-        }
+//        int [] cComp=MumArray.clusterCompression(new int[]{8, 8, 6, 6, -2, -2, -2});
+//        for(int val:cComp)
+//        {
+//            System.out.println(val);
+//        }
+//        System.out.println(MumArray.isRailroadTie(new int[]{1, 2, 0, 3, -18, 0, 2, 2}));
+//
+//        System.out.println(MumArray.isRailroadTie(new int[]{1, 2, 3, 0, 2, 2}));
+//
+//        System.out.println(MumArray.isRailroadTie(new int[]{0, 1, 2, 0, 3, 4}));
+//        System.out.println(MumArray.isRailroadTie(new int[]{1, 2, 0, 0, 3, 4}));
+//        System.out.println(MumArray.isRailroadTie(new int[]{1}));
+//        System.out.println(MumArray.isRailroadTie(new int[]{}));
+//        System.out.println(MumArray.isRailroadTie(new int[]{0}));
+        System.out.println(MumArray.isRailroadTie(new int[]{1, 2}));
+        System.out.println(MumArray.isRailroadTie(new int[]{1, 2, 0, 1, 2, 0, 1, 2}));
+        System.out.println(MumArray.isRailroadTie(new int[]{3, 3, 0, 3, 3, 0, 3, 3, 0, 3, 3}));
+        System.out.println(MumArray.isRailroadTie(new int[]{0, 0, 0, 0}));
+        System.out.println(MumArray.isRailroadTie(new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}));
+        System.out.println(MumArray.isRailroadTie(new int[]{1, 3, 0, 3, 5, 0}));
 
     }
 }

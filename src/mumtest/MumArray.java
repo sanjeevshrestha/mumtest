@@ -100,9 +100,9 @@ public class MumArray {
     }
 
     /**
-     * 
+     *
      * @param a
-     * @return 
+     * @return
      */
     public static int isSequentiallyBounded(int[] a) {
         int isSqBounded = 0;
@@ -117,8 +117,8 @@ public class MumArray {
                     } else {
                         if (count < prevNumber) {
                             prevNumber = a[i];
-                            count=1;
-                            
+                            count = 1;
+
                         } else {
                             return 0;
 
@@ -126,7 +126,7 @@ public class MumArray {
                     }
 
                 } else {
-                    return  0;
+                    return 0;
                 }
             }
             return 1;
@@ -134,37 +134,78 @@ public class MumArray {
         return 0;
 
     }
-    
+
     /**
-     * 
+     *
      * @param a
-     * @return 
+     * @return
      */
-    public static int[] clusterCompression(int [] a)
-    {
-        
-        int [] cCluster=new int[]{};
-        
-        int count=0;
-        int prevNumber=0;
-        for(int val:a)
-        {
-            if(prevNumber!=val || count==0)
-            {
-                prevNumber=val;
+    public static int[] clusterCompression(int[] a) {
+
+        int[] cCluster = new int[]{};
+
+        int count = 0;
+        int prevNumber = 0;
+        for (int val : a) {
+            if (prevNumber != val || count == 0) {
+                prevNumber = val;
                 count++;
-                int [] tmpAr=new int[count];
-                
-                System.arraycopy(cCluster, 0, tmpAr, 0, count-1);
-                tmpAr[count-1]=val;
-                cCluster=tmpAr;
+                int[] tmpAr = new int[count];
+
+                System.arraycopy(cCluster, 0, tmpAr, 0, count - 1);
+                tmpAr[count - 1] = val;
+                cCluster = tmpAr;
             }
-            
+
         }
-        
-        
+
         return cCluster;
-        
-        
+
+    }
+
+    public static int isRailroadTie(int[] a) {
+
+        if (a.length > 1) {
+            for (int i = 0; i < a.length; i++) {
+                int x = a[i];
+                if (a[i] == 0 && i != 0) {
+
+                    if (i < a.length - 1) {
+                        if (a[i - 1] == 0 || a[i + 1] == 0) {
+                            return 0;
+                        }
+                    } 
+                    else
+                    {
+                        return 0;
+                    }
+
+                } else if (a[i] != 0) {
+                    if (i > 0) {
+                        if (i < a.length - 1) {
+                            if (a[i - 1] != 0 && a[i + 1] != 0) {
+                                return 0;
+                            }
+                        } else {
+                            if (a[i - 1] == 0) {
+                                return 0;
+                            }
+                        }
+                    } else {
+                        if (a[i + 1] == 0) {
+                            return 0;
+                        }
+                    }
+
+                } else {
+                    return 0;
+                }
+
+            }
+        } else {
+            return 0;
+        }
+        return 1;
+
     }
 }
