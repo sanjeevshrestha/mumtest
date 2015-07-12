@@ -157,12 +157,17 @@ public class MumTest {
 //        System.out.println(MumArray.isRailroadTie(new int[]{1}));
 //        System.out.println(MumArray.isRailroadTie(new int[]{}));
 //        System.out.println(MumArray.isRailroadTie(new int[]{0}));
-        System.out.println(MumArray.isRailroadTie(new int[]{1, 2}));
-        System.out.println(MumArray.isRailroadTie(new int[]{1, 2, 0, 1, 2, 0, 1, 2}));
-        System.out.println(MumArray.isRailroadTie(new int[]{3, 3, 0, 3, 3, 0, 3, 3, 0, 3, 3}));
-        System.out.println(MumArray.isRailroadTie(new int[]{0, 0, 0, 0}));
-        System.out.println(MumArray.isRailroadTie(new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}));
-        System.out.println(MumArray.isRailroadTie(new int[]{1, 3, 0, 3, 5, 0}));
+//        System.out.println(MumArray.isRailroadTie(new int[]{1, 2}));
+//        System.out.println(MumArray.isRailroadTie(new int[]{1, 2, 0, 1, 2, 0, 1, 2}));
+//        System.out.println(MumArray.isRailroadTie(new int[]{3, 3, 0, 3, 3, 0, 3, 3, 0, 3, 3}));
+//        System.out.println(MumArray.isRailroadTie(new int[]{0, 0, 0, 0}));
+//        System.out.println(MumArray.isRailroadTie(new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}));
+//        System.out.println(MumArray.isRailroadTie(new int[]{1, 3, 0, 3, 5, 0}));
+        System.out.println(special.smallest(3));
+        System.out.println(special.smallest(4));
+        System.out.println(special.smallest(5));
+        System.out.println(special.smallest(6));
+        System.out.println(special.smallest(7));
 
     }
 }
