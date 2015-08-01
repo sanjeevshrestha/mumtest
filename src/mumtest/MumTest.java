@@ -168,12 +168,15 @@ public class MumTest {
 //        System.out.println(special.smallest(5));
 //        System.out.println(special.smallest(6));
 //        System.out.println(special.smallest(7));
-        System.out.println(base.fullnessQuotient(94));
-        System.out.println(base.fullnessQuotient(1));
-        System.out.println(base.fullnessQuotient(9));
-        System.out.println(base.fullnessQuotient(360));
-
-        System.out.println(base.fullnessQuotient(-4));
+//        System.out.println(base.fullnessQuotient(94));
+//        System.out.println(base.fullnessQuotient(1));
+//        System.out.println(base.fullnessQuotient(9));
+//        System.out.println(base.fullnessQuotient(360));
+//
+//        System.out.println(base.fullnessQuotient(-4));
+        
+        MumArray.matches(new int[]{1,2,3}, new int[]{2,3,4,5});
+                
 
     }
 }

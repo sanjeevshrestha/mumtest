@@ -208,4 +208,21 @@ public class MumArray {
         return 1;
 
     }
+    
+    
+    public static int matches(int []a,int[]p)
+    {
+       
+        for(int num: p)
+        {
+            for(int x=0;x<num;x++)
+            {
+                if(num<0!=a[x]<0)
+                {
+                    return 0;
+                }
+            }
+       }
+        return 0;       
+    }
 }
