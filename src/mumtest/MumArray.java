@@ -163,6 +163,11 @@ public class MumArray {
 
     }
 
+    /**
+     *
+     * @param a
+     * @return
+     */
     public static int isRailroadTie(int[] a) {
 
         if (a.length > 1) {
@@ -174,9 +179,7 @@ public class MumArray {
                         if (a[i - 1] == 0 || a[i + 1] == 0) {
                             return 0;
                         }
-                    } 
-                    else
-                    {
+                    } else {
                         return 0;
                     }
 
@@ -207,5 +210,28 @@ public class MumArray {
         }
         return 1;
 
+    }
+
+    public static int isPacked(int[] a) {
+
+        int prevNumber = 0;
+        int count = 0;
+        for (int val : a) {
+            if (val != prevNumber || count == 0) {
+
+                if (count != prevNumber) {
+                    return 0;
+                }
+                else
+                {
+                    count=0;
+                }
+                prevNumber = val;
+
+            }
+            count++;
+        }
+
+        return 1;
     }
 }
