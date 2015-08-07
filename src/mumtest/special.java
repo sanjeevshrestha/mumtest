@@ -481,6 +481,102 @@ public class special {
     }
     
     
+    public static int fibonacci(int n)
+    {
+       if(n<2) 
+       {
+           return n;
+       }
+       else
+       {
+           return fibonacci(n-1)+fibonacci(n-2);
+       }
+       
+    }
+    
+    
+    public static int getExponent(int n, int p)
+    {
+        int maxE=0;
+        
+        return 0;
+    }
+    
+    
+    
+    public static int gcd(int a, int b)
+    {
+       while(b>0)
+       {
+           int temp=b;
+           b=a%b;
+           a=temp;
+       };
+       
+       return a;
+    }
+    
+    
+    public static int checkConcatenatedSum(int n, int catlen)
+    {
+        int sum=0;
+        
+        int isConcat=0;
+        int orign=n;
+        
+        while(n>0)
+        {
+            int rem=n%10;
+            n=n/10;
+            
+            int p=1;
+            int concatnum=0;
+            for(int i=0;i<catlen;i++)
+            {
+                concatnum=concatnum*10+rem;   
+            }
+            
+            sum+=concatnum;
+            
+        }
+        
+        return (sum==orign)?1:0;
+    }
+    
+    
+    public static int findSmallestBEQnumber()
+    {
+        int sBEQ=0;
+        boolean found=false;
+        while(!found)
+        {
+            
+            sBEQ++;
+            long cube=1;
+            for(int i=0;i<3;i++)
+            {
+                cube=cube*sBEQ;
+            }
+
+            int count6=0;
+           while(cube>0)
+           {
+               int rem=(int)(cube%10);
+               cube=cube/10;
+               if(rem==6)
+               {
+                   count6++;
+               }
+           }
+           if(count6==4)
+           {
+               
+               found=true;
+           }
+        }
+        
+        return sBEQ;
+    }
    
 
 }

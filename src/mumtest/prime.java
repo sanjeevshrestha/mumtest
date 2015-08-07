@@ -33,7 +33,7 @@ public class prime {
                 return false;
             }
 
-            for (int i = 3; i <=limit; i += 2) {
+            for (int i = 3; i <= limit; i += 2) {
                 if (n % i == 0) {
                     flag = true;
                     break;
@@ -95,14 +95,41 @@ public class prime {
     public static int primeCount(int s, int e) {
         int count = 0;
 
-        for(int i=s;i<=e;i++)
-        {
-            if(isPrime(i))
-            {
+        for (int i = s; i <= e; i++) {
+            if (isPrime(i)) {
                 count++;
             }
         }
 
         return count;
+    }
+
+    public static int isPrime2(int n) {
+        if (n <= 1) {
+            return 0;
+        }
+
+        double temp, sq = n / 2;
+
+        if (n > 2) {
+            if (n % 2 == 0) {
+                return 0;
+            }
+
+            do {
+                temp = sq;
+                sq = (temp + (n / temp)) / 2;
+            } while ((temp - sq) != 0);
+
+            int limit = (int) sq;
+
+            for (int i = 3; i < limit; i+=2) {
+                if (n % i == 0) {
+                    return 0;
+                }
+            }
+        }
+        return 1;
+
     }
 }

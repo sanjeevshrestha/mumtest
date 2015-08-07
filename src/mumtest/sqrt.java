@@ -28,6 +28,25 @@ public class sqrt {
 
         return sq;
     }
+    
+    
+    public static double sqrt2(int n)
+    {
+        if(n<=0) return 0;
+        
+        double x, sq=n/2;
+        
+        do
+        {
+            x=sq;
+            sq=(x+(n/x))/2;
+
+        
+        }while((x-sq)!=0);
+        
+        return sq;
+        
+    }
 
     /**
      *

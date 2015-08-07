@@ -174,10 +174,57 @@ public class MumTest {
 //        System.out.println(base.fullnessQuotient(360));
 //
 //        System.out.println(base.fullnessQuotient(-4));
-        System.out.println(MumArray.isPacked(new int[]{2, 2, 1}));
-        System.out.println(MumArray.isPacked(new int[]{2, 2, 1, 2, 2}));
-        System.out.println(MumArray.isPacked(new int[]{4, 4, 4, 4, 1, 2, 2, 1,3, 3, 3}));
-        System.out.println(MumArray.isPacked(new int[]{7, 7, 7,7, 7, 7, 7,1}));
+//        System.out.println(MumArray.isPacked(new int[]{2, 2, 1}));
+//        System.out.println(MumArray.isPacked(new int[]{2, 2, 1, 2, 2}));
+//        System.out.println(MumArray.isPacked(new int[]{4, 4, 4, 4, 1, 2, 2, 1,3, 3, 3}));
+//        System.out.println(MumArray.isPacked(new int[]{7, 7, 7,7, 7, 7, 7,1}));
+//        
+//        MumArray.matches(new int[]{1,2,3}, new int[]{2,3,4,5
+//        System.out.println(special.fibonacci(0));
+//
+//        System.out.println(special.fibonacci(1));
+//
+//        System.out.println(special.fibonacci(2));
+//        System.out.println(special.fibonacci(3));
+//        System.out.println(special.fibonacci(4));
+//        System.out.println(special.fibonacci(5));
+//        System.out.println(special.fibonacci(6));
+        //System.out.println(MumArray.isRailRoadTie2(new int[]{1,2,0,3,-18,0,2,2}));
+        // System.out.println(base.fullnessQuotient2(100));
+//        System.out.println(MumArray.isOddHeavy(new int[]{11, 4, 9, 2, 8}));
+//
+//        System.out.println(MumArray.isOddHeavy(new int[]{1}));
+//        System.out.println(MumArray.isOddHeavy(new int[]{2}));
+//        System.out.println(MumArray.isOddHeavy(new int[]{1, 1, 1, 1, 1, 1}));
+//        System.out.println(MumArray.isOddHeavy(new int[]{2, 4, 6, 8, 11}));
+//        System.out.println(MumArray.isOddHeavy(new int[]{-2, -4, -6, -8, -11}));
+        //System.out.println(MumArray.isOddHeavy(new int[]{-1, - 6, - 3, -4, -8}));
+        //System.out.println(special.gcd(4,10));
+        //System.out.println(prime.isPrime2(12));
+        // MumArray.filterArray(new int[]{8,4,9,00,3,1,2}, 88);
+//        System.out.println(MumArray.largestAdjancetSum(new int[]{1, 2, 3, 4}));
+//        System.out.println(MumArray.largestAdjancetSum(new int[]{18, -12, 9, -10}));
+//        System.out.println(MumArray.largestAdjancetSum(new int[]{1, 1, 1, 1, 1, 1, 1}));
+//
+//        System.out.println(MumArray.largestAdjancetSum(new int[]{1, 1, 1, 2, 1, 1, 1, 1}));
+        //System.out.println(special.checkConcatenatedSum(198, 3));
+        //System.out.println(MumArray.isSequencedArray(new int[]{1,3,4,2,5}, 1, 5));
+       // System.out.println(special.findSmallestBEQnumber());
+       System.out.println(MumArray.isZeroLimited(new int[]{1, 0, 5, -1, 0, 2, 3, 0, 8}));
+//
+        //System.out.println(MumArray.isZeroLimited(new int[]{0, 0, 0, 0, 0}));
+//        System.out.println(MumArray.isZeroLimited(new int[]{1, 0}));
+//        System.out.println(MumArray.isZeroLimited(new int[]{0, 1}));
+//        System.out.println(MumArray.isZeroLimited(new int[]{5}));
+//        System.out.println(MumArray.isZeroLimited(new int[]{1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0}));
+//        System.out.println(MumArray.isZeroLimited(new int[]{}));
+        
+//        System.out.println(MumArray.isBeanArray(new int[]{1, 2, 3, 9, 6, 13}));
+//        System.out.println(MumArray.isBeanArray(new int[]{3, 4, 6, 7, 13, 15,16}));
+//        System.out.println(MumArray.isBeanArray(new int[]{1, 2, 3, 4, 10, 11, 12}));
+//        System.out.println(MumArray.isBeanArray(new int[]{3, 6, 9, 5, 7, 13, 6, 17}));
+//        System.out.println(MumArray.isBeanArray(new int[]{9, 6, 18}));
+//        System.out.println(MumArray.isBeanArray(new int[]{4, 7, 16}));
 
     }
 }

@@ -12,10 +12,10 @@ package mumtest;
 public class base {
 
     /**
-     * 
+     *
      * @param a
      * @param base
-     * @return 
+     * @return
      */
     public static int isLegalNumber(int[] a, int base) {
         for (int val : a) {
@@ -27,10 +27,10 @@ public class base {
     }
 
     /**
-     * 
+     *
      * @param a
      * @param base
-     * @return 
+     * @return
      */
     public static int convertToBase10(int[] a, int base) {
         int sum = 0;
@@ -50,12 +50,14 @@ public class base {
     }
 
     /**
-     * 
+     *
      * @param n
-     * @return 
+     * @return
      */
     public static int fullnessQuotient(int n) {
-        if(n<0) return -1;
+        if (n < 0) {
+            return -1;
+        }
         int count = 0;
         for (int i = 2; i <= 9; i++) {
             int x = n;
@@ -74,6 +76,37 @@ public class base {
             }
         }
         return count;
+    }
+
+    public static int fullnessQuotient2(int n) {
+        if (n < 1) {
+            return -1;
+        }
+
+        int fQ = 0;
+
+        for (int i = 2; i <= 9; i++) {
+            boolean flag = true;
+
+            int x = n;
+            while (x > 0) {
+                int rem = x % i;
+                x = x / i;
+
+                if (rem != 0) {
+                    flag = flag && true;
+                } else {
+                    flag = false;
+                }
+            }
+
+            if (flag) {
+                fQ++;
+            }
+        }
+
+        return fQ;
+
     }
 
 }
